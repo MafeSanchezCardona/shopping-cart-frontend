@@ -1,0 +1,65 @@
+root: true
+
+parser: '@typescript-eslint/parser'
+
+parserOptions:
+  ecmaVersion: 2020
+  sourceType: 'module'
+  project: './tsconfig.json'
+  ecmaFeatures:
+    jsx: true
+
+settings:
+  import/resolver:
+    node:
+      extensions: [ ".js", ".jsx", ".ts", ".tsx" ]
+  react:
+    version: 'detect'
+
+env:
+  browser: true
+  amd: true
+  node: true
+  es6: true
+  jest: true
+
+extends:
+  - 'eslint:recommended'                        # Recommended rules by eslint
+  - 'plugin:import/errors'                      # Error rules by eslint-import
+  - 'plugin:import/warnings'                    # Warn rules by eslint-import
+  - 'plugin:import/typescript'                  # Typescript support for imports
+  - 'plugin:@typescript-eslint/recommended'     # Recommended typescript rules
+  - 'plugin:react/recommended'                  # Recommended react rules
+  - 'plugin:prettier/recommended'               # Has to be last except for rules
+
+rules:
+  'react/jsx-uses-react': 'off'
+  'react/react-in-jsx-scope': 'off'
+
+  'react/prop-types': 'off'
+
+  'import/order':
+    - 'error'
+    - groups:
+        - "builtin"
+        - "external"
+        - "internal"
+        - "sibling"
+        - "parent"
+        - "object"
+        - "index"
+      pathGroups:
+        - pattern: 'react*'
+          group: 'external'
+          position: 'before'
+
+        - pattern: '@mui*/**'
+          group: 'external'
+          position: 'before'
+      pathGroupsExcludedImportTypes:
+        - 'react*'
+        - '@mui*/**'
+      newlines-between: 'always'
+      alphabetize:
+        order: 'asc'
+        caseInsensitive: true
