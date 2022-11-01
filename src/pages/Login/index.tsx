@@ -57,6 +57,7 @@ export default function Login(): ReactElement {
           <TextField
             id='password'
             label='Password'
+            type='password'
             size={'small'}
             variant={'outlined'}
             value={password}

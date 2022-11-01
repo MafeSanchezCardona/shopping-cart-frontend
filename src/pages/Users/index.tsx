@@ -88,6 +88,7 @@ export default function Users(): ReactElement {
               <TextField
                 id='password'
                 label='Password'
+                type='password'
                 size={'small'}
                 variant={'outlined'}
                 inputProps={{ maxLength: 20 }}
