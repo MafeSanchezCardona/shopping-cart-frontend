@@ -21,3 +21,9 @@ The project was made with React JS and Material UI.
 
 ### Product creation form 
 <img width="209" alt="image" src="https://user-images.githubusercontent.com/50161983/199287321-dac10250-3d4b-4081-b608-e14c67a5d23b.png">
+
+### Validations
+<img width="955" alt="image" src="https://user-images.githubusercontent.com/50161983/199287843-c9c9e026-d515-48cb-bfd1-ade287c931ad.png">
+<img width="244" alt="image" src="https://user-images.githubusercontent.com/50161983/199287956-757f3230-acb1-420e-a0e8-0badf9b17b2b.png">
+<img width="187" alt="image" src="https://user-images.githubusercontent.com/50161983/199288015-e547f865-a326-4fd7-abb3-e222791f00bc.png">
+<img width="935" alt="image" src="https://user-images.githubusercontent.com/50161983/199288061-f101d022-ddbb-4e7d-b1b3-d9c1443db7ea.png">
